@@ -28,6 +28,11 @@
             "Properties": {
                 "GroupName": "toro-cloud-public-ips",
                 "GroupDescription": "TORO Cloud Public IPs allow connection to 3306",
+                "Tags": [
+                    {
+                        "Name": "toro-cloud-ips"
+                    }
+                ],
                 "SecurityGroupIngress": [
                     {
                         "IpProtocol": "tcp",
@@ -53,7 +58,7 @@
     "Parameters": {
         "SecurityGroupVPC": {
             "Type": "AWS::EC2::VPC::Id",
-            "Description": "The VPC where you'd like to create the Security Group"
+            "Description": "The VPC where you'd like to save the Security Group"
         }
     }
 }
