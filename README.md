@@ -4,5 +4,7 @@ An AWS CloudFormation template used to create a security group with a list of al
 CloudFormation template whitelists all Public IP Addresses associated to TORO Cloud infrastructure. It specifically allows
 the connection to port 3306.
 
+Whenever there are changes with our public IPs, we update this template as well for the ease of all users.
+
 ## Errors with the template?
 Find support on our support portal, http://support.torocloud.com/
