@@ -46,12 +46,6 @@
                         "FromPort": "1521",
                         "ToPort": "1521",
                         "CidrIp": "18.206.146.85/32"
-                    },
-                    {
-                        "IpProtocol": "tcp",
-                        "FromPort": "1521",
-                        "ToPort": "1521",
-                        "CidrIp": "52.23.238.162/32"
                     }
                 ]
             },
