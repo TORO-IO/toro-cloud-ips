@@ -26,11 +26,12 @@
         "ToroCloudPublicIps": {
             "Type": "AWS::EC2::SecurityGroup",
             "Properties": {
-                "GroupName": "toro-cloud-public-ips",
+                "GroupName": "toro-cloud-public-ips-mysql",
                 "GroupDescription": "TORO Cloud Public IPs allow connection to 3306",
                 "Tags": [
                     {
-                        "Name": "toro-cloud-ips"
+                        "Key": "Name",
+                        "Value": "toro-cloud-ips-mysql"
                     }
                 ],
                 "SecurityGroupIngress": [
@@ -45,6 +46,12 @@
                         "FromPort": "3306",
                         "ToPort": "3306",
                         "CidrIp": "18.206.146.85/32"
+                    },
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "3306",
+                        "ToPort": "3306",
+                        "CidrIp": "52.23.238.162/32"
                     }
                 ]
             },
